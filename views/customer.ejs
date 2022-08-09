@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+        
+            th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  table {
+    border-spacing: 20px;
+    position: absolute;
+    top: 60px;
+  }
+  .tb{
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th{
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  td{
+      border:1px solid black
+  }
+  h1{
+      padding-top: 10px;
+      background-color: yellow;
+      width: 355px;
+      border: 2px solid black;
+  }
+          </style>
+        <body>
+            <table class="tb">
+                <h1>Cutomer Table</h1>
+                <tr>
+                 <th>Customer_id</th>
+                 <th>Customer Name</th>
+                 <th>Email</th>
+                </tr>
+                 <!-- </table> -->
+            <% for (let i=0;i<customer.length;i++) {%>
+                <!-- <table> -->
+                    <tr>
+                     <td><%= customer[i].customer_id %></td>
+                     <td><%= customer[i].customerName %></td>
+                     <td><%= customer[i].email%></td>
+                    </tr>
+                     
+            <% } %>
+        </table>
+        </body>
+    </head>
+</html>
